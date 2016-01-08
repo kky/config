@@ -12,21 +12,21 @@
             <key>settings</key>
             <dict>
                 <key>background</key>
-                <string>#131313</string>
+                <string>#2D004B</string>
                 <key>caret</key>
                 <string>#00bbff</string>
                 <key>foreground</key>
-                <string>#cccccc</string>
+                <string>#bbbbbb</string>
                 <key>invisibles</key>
                 <string>#1f1f1f</string>
                 <key>lineHighlight</key>
                 <string>#191919</string>
                 <key>selection</key>
-                <string>#5a0096</string>
+                <string>#7400C2</string>
                 <key>selectionBorder</key>
                 <string>#F9DC3D</string>
                 <key>inactiveSelection</key>
-                <string>#4a2c1a</string>
+                <string>#1F0034</string>
                 <key>findHighlight</key>
                 <string>#00186d</string>
                 <key>findHighlightForeground</key>
@@ -215,8 +215,6 @@
             <string>constant.character, string</string>
             <key>settings</key>
             <dict>
-                <key>background</key>
-                <string>#0416521A</string>
                 <key>fontStyle</key>
                 <string></string>
                 <key>foreground</key>
@@ -243,8 +241,6 @@
             <string>constant.character.escape</string>
             <key>settings</key>
             <dict>
-                <key>background</key>
-                <string>#041652CC</string>
                 <key>fontStyle</key>
                 <string>bold</string>
             </dict>
@@ -256,8 +252,6 @@
             <string>constant.other.symbol</string>
             <key>settings</key>
             <dict>
-                <key>background</key>
-                <string>#17002a</string>
                 <key>fontStyle</key>
                 <string>bold</string>
             </dict>
@@ -315,8 +309,6 @@
             <dict>
                 <key>foreground</key>
                 <string>#555555</string>
-                <key>background</key>
-                <string>#131313</string>
             </dict>
         </dict>
         <dict>
@@ -397,10 +389,6 @@
             <dict>
                 <key>fontStyle</key>
                 <string>italic</string>
-                <key>foreground</key>
-                <string>#cccccc</string>
-                <key>background</key>
-                <string>#171717</string>
             </dict>
         </dict>
         <dict>
@@ -412,8 +400,6 @@
             <dict>
                 <key>foreground</key>
                 <string>#cccccc</string>
-                <key>background</key>
-                <string>#22222200</string>
             </dict>
         </dict>
         <dict>
@@ -425,8 +411,6 @@
             <dict>
                 <key>foreground</key>
                 <string>#555555</string>
-                <key>background</key>
-                <string>#11111100</string>
             </dict>
         </dict>
 
@@ -442,10 +426,8 @@
             </string>
             <key>settings</key>
             <dict>
-                <key>foreground</key>
-                <string>#cccccc</string>
                 <key>background</key>
-                <string>#11111100</string>
+                <string>#1F0034</string>
             </dict>
         </dict>
         <dict>
@@ -557,8 +539,6 @@
             <dict>
                 <key>foreground</key>
                 <string>#313131</string>
-                <key>background</key>
-                <string>#131313</string>
             </dict>
         </dict>
         <dict>
@@ -573,8 +553,6 @@
             <dict>
                 <key>foreground</key>
                 <string>#484848</string>
-                <key>background</key>
-                <string>#222222</string>
             </dict>
         </dict>
         <dict>
@@ -602,14 +580,13 @@
             </dict>
         </dict>
         <dict>
+            <!-- This applies to the link part of inline links -->
             <key>name</key>
             <string>Markup: Underline</string>
             <key>scope</key>
             <string>markup.underline,markup.underline.link.markdown,constant.other.reference.link.markdown,meta.image.reference.markdown</string>
             <key>settings</key>
             <dict>
-                <key>background</key>
-                <string>#171717</string>
                 <key>foreground</key>
                 <string>#555555</string>
             </dict>
@@ -723,8 +700,6 @@
             <dict>
                 <key>foreground</key>
                 <string>#313131</string>
-                <key>background</key>
-                <string>#131313</string>
             </dict>
         </dict>
         <dict>
@@ -734,8 +709,6 @@
             <string>text.html.markdown markup.quote.markdown markup.kbd.content.markdown</string>
             <key>settings</key>
             <dict>
-                <key>background</key>
-                <string>#1a1a1a</string>
                 <key>foreground</key>
                 <string>#8e8e8e</string>
             </dict>
@@ -761,8 +734,6 @@
             <string>punctuation.definition.blockquote.markdown</string>
             <key>settings</key>
             <dict>
-                <key>background</key>
-                <string>#3E3E3E</string>
                 <key>foreground</key>
                 <string>#3E3E3E</string>
             </dict>
@@ -775,9 +746,9 @@
             <key>settings</key>
             <dict>
                 <key>background</key>
-                <string>#212121</string>
+                <string>#111111</string>
                 <key>foreground</key>
-                <string>#aaaaaa</string>
+                <string>#00aa00</string>
             </dict>
         </dict>
         <dict>
@@ -788,7 +759,9 @@
             <key>settings</key>
             <dict>
                 <key>background</key>
-                <string>#212121</string>
+                <string>#111111</string>
+                <key>foreground</key>
+                <string>#00aa00</string>
             </dict>
         </dict>
         <dict>
@@ -811,8 +784,6 @@
             <string>entity.name.class</string>
             <key>settings</key>
             <dict>
-                <key>background</key>
-                <string>#2A090088</string>
             </dict>
         </dict>
 
@@ -839,8 +810,6 @@
             <dict>
                 <key>foreground</key>
                 <string>#dedede</string>
-                <key>background</key>
-                <string>#FF420077</string>
             </dict>
         </dict>
         <!-- Support for GitGutter -->
