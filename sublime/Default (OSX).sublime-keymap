@@ -1,0 +1,61 @@
+// Located at or near: /Users/kyoung/Library/Application Support/Sublime Text 2/Packages/User
+[
+  // Move forward word
+  { "keys": ["alt+f"]
+  , "command": "move"
+  , "args": {"by": "words", "forward": true }
+  },
+  // Move backward word
+  { "keys": ["alt+b"]
+  , "command": "move"
+  , "args": {"by": "words", "forward": false }
+  },
+  // Delete forward word
+  { "keys": ["alt+d"]
+  , "command": "delete_word"
+  , "args": { "forward": true, "sub_words": true } 
+  },
+  // Delete backward line
+  { "keys": ["ctrl+u"]
+  , "command": "run_macro_file"
+  , "args": {"file": "Packages/Default/Delete to Hard BOL.sublime-macro"} 
+  },
+
+  // For Markdown
+    // inline link insertion
+    { "keys": ["alt+l"], "command": "insert_snippet", "args": {"contents": "[$1]($0)"}, "context":
+     [
+         { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+         { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+         { "key": "following_text", "operator": "regex_contains", "operand": "^(?:\t| |\\)|]|\\}|$)", "match_all": true },
+         { "key": "preceding_text", "operator": "not_regex_contains", "operand": "['a-zA-Z0-9_]$", "match_all": true },
+         { "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.single", "match_all": true },
+         { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+     ]
+    },
+    { "keys": ["alt+l"], "command": "insert_snippet", "args": {"contents": "[$SELECTION]($0)"}, "context":
+        [
+            { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+            { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+            { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+        ]
+    },
+    // inline image insertion
+    { "keys": ["alt+i"], "command": "insert_snippet", "args": {"contents": "![$1]($0)"}, "context":
+     [
+         { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+         { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
+         { "key": "following_text", "operator": "regex_contains", "operand": "^(?:\t| |\\)|]|\\}|$)", "match_all": true },
+         { "key": "preceding_text", "operator": "not_regex_contains", "operand": "['a-zA-Z0-9_]$", "match_all": true },
+         { "key": "eol_selector", "operator": "not_equal", "operand": "string.quoted.single", "match_all": true },
+         { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+     ]
+    },
+    { "keys": ["alt+i"], "command": "insert_snippet", "args": {"contents": "![$SELECTION]($0)"}, "context":
+        [
+            { "key": "setting.auto_match_enabled", "operator": "equal", "operand": true },
+            { "key": "selection_empty", "operator": "equal", "operand": false, "match_all": true },
+            { "key": "selector", "operator": "equal", "operand": "text.html.markdown", "match_all": true }
+        ]
+    } 
+]
