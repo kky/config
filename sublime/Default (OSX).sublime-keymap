@@ -5,10 +5,18 @@
   , "command": "move"
   , "args": {"by": "words", "forward": true }
   },
+  { "keys": ["alt+shift+f"]
+  , "command": "move"
+  , "args": {"by": "words", "forward": true, "extend": true }
+  },
   // Move backward word
   { "keys": ["alt+b"]
   , "command": "move"
   , "args": {"by": "words", "forward": false }
+  },
+  { "keys": ["alt+shift+b"]
+  , "command": "move"
+  , "args": {"by": "words", "forward": false, "extend": true }
   },
   // Delete forward word
   { "keys": ["alt+d"]
@@ -59,7 +67,7 @@
         ]
     },
 
-        // Bold 
+    // Bold 
     { "keys": ["super+b"], "command": "run_macro_file", "args": {"file": "Packages/MarkdownEditing/macros/Transform Word - Bold.sublime-macro"}, "context":
         [
             { "key": "selection_empty", "operator": "equal", "operand": true, "match_all": true },
