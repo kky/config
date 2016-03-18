@@ -3,11 +3,11 @@
   // Move forward word
   { "keys": ["alt+f"]
   , "command": "move"
-  , "args": {"by": "words", "forward": true }
+  , "args": {"by": "wordends", "forward": true }
   },
   { "keys": ["alt+shift+f"]
   , "command": "move"
-  , "args": {"by": "words", "forward": true, "extend": true }
+  , "args": {"by": "wordends", "forward": true, "extend": true }
   },
   // Move backward word
   { "keys": ["alt+b"]
